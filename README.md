@@ -2,9 +2,12 @@
 
 Telegram AI Chatbot is an intelligent chatbot designed for engaging conversations on the Telegram platform. Powered by advanced AI models, users can choose from a variety of providers, each offering a unique conversational experience. The bot supports translation to Persian and provides detailed information about the available AI providers.
 
+demo: [N0vaChatbot](https://t.me/N0vaChatbot)
 ## Persian Description
 
  یک ربات چت هوشمند برای  گفتگو با هوش مصنوعی در پلتفرم تلگرام است. با استفاده از مدل‌های پیشرفته هوش مصنوعی، کاربران می‌توانند از انواع ارائه‌دهندگان انتخاب کنند، هرکدام تجربه چت منحصر به فردی ارائه می‌دهند. ربات از ترجمه به فارسی پشتیبانی می‌کند و اطلاعات دقیقی از ارائه‌دهندگان هوش مصنوعی موجود فراهم می‌کند.
+ 
+demo: [N0vaChatbot](https://t.me/N0vaChatbot)
 
 ## Getting Started
 
@@ -16,7 +19,7 @@ Telegram AI Chatbot is an intelligent chatbot designed for engaging conversation
 ### Installation
 
 ```bash
-pip install python-telegram-bot g4f googletrans==4.0.0-rc1
+pip install PyTelegramBotApi g4f googletrans==4.0.0-rc1
 ```
 
 ### Usage
