@@ -22,7 +22,7 @@ pip install python-telegram-bot g4f googletrans==4.0.0-rc1
 ### Usage
 
 1. Replace the `TOKEN` variable in the script with your Telegram bot token.
-2. Run the script: `Chatbot.py`
+2. Run the script: `AIchatbot.py`
 
 ## Features
 
