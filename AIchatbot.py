@@ -40,7 +40,7 @@ class GptChat:
             )
             return f" {self.current_provider}: \n {rsp}"
         except Exception as e:
-            return f"Provider is not available at the moment try another providers.\n /providers "
+            return f"Provider is not available at the moment try other providers.\n /providers "
 
     async def _start_conversation(self, prm: types.Message) -> None:
         tasks = [self.chat_with_prv(prv, prm.text) for prv in self._prv]
@@ -73,22 +73,7 @@ def callback_inline(call):
 
 @bot.message_handler(commands=['more'])
 def more_details(message):
-    bot.reply_to(message, """| AI Provider         | Model         | Response Speed |
-|---------|--------|-----------|
-| GeekGpt             | GPT-3.5       | Low                      |
-| OnlineGpt           | GPT-4         | Low                      |
-| GPTalk              | GPT-4         | Low                      |
-| Hashnode            | GPT-4         | Low                      |
-| ChatForAi           | GPT-3         | Low                      |
-| DeepInfra           | LLaMA         | High                     |
-| Llama2              | LLaMA         | High                     |
-| Bing                | GPT-4         | High                     |
-| AiChatOnline        | GPT-3         | Low                      |
-| Liaobots            | Not specified | Not specified            |
-| Chatgpt4Online      | GPT-4         | High                     |
-| GptForLove          | GPT-3.5       | High                     |
-| ChatgptNext         | GPT-4         | High                     |
-| ChatAnywhere        | Not specified | Not specified            |""")
+    bot.reply_to(message, "more details on https://github.com/xtekky/gpt4free/tree/main#-providers-and-models")
 
 @bot.message_handler(func=lambda m: True)
 def echo_all(message):
